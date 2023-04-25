@@ -1,15 +1,11 @@
 import requests
 import streamlit as st
-from streamlit_lottie import st_lottie
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from pandas_datareader import data as pdr
 import yfinance as yf
 from datetime import datetime
-from sklearn.preprocessing import MinMaxScaler
-from keras.layers import Dense, Dropout, LSTM
-from keras.models import Sequential
 import statsmodels.api as sm
 from statsmodels.tsa.ar_model import AutoReg
 from statsmodels.tsa.vector_ar.vecm import VECM
