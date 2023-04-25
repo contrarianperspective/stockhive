@@ -1,2 +1,8 @@
 streamlit_lottie
 matplotlib
+pandas_datareader
+yfinance
+scikit-learn
+keras
+statsmodels
+seaborn
