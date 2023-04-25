@@ -1,6 +1,5 @@
 import requests
 import streamlit as st
-from streamlit_lottie import st_lottie
 
 st.set_page_config(page_title="StockHive", page_icon=":1234:", layout="wide")
 
@@ -13,14 +12,6 @@ mystyle = '''
     '''
 
 st.markdown(mystyle, unsafe_allow_html=True)
-
-def load_lottieurl(url):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return None
-    return r.json()
-
-lottie_coding = load_lottieurl("https://assets10.lottiefiles.com/packages/lf20_kuhijlvx.json")
 
 with st.container():
     st.title("StockHive")
@@ -36,4 +27,4 @@ with st.container():
         #st.button('Go to forecasting')
     
     with right_column:
-        st_lottie(lottie_coding, height=300, key="coding")
+        st.write("")
